@@ -1,0 +1,19 @@
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Đưa form vào giữa */
+    gap: 10px; /* Tạo khoảng cách giữa các dòng */
+  }
+  
+  .form-container {
+    width: 25%; /* Đặt chiều rộng cho form */
+  }
+
+  .btn-create {
+    width: 100px; /* Đặt chiều rộng lớn hơn */
+    height: 30px; /* Đặt chiều cao lớn hơn */
+    font-size: 18px; /* Tăng kích thước font chữ */
+    font-weight: bold;
+  }
+  

@@ -12,10 +12,6 @@ const get = id => {
     return httpClient.get(`/get/${id}`);
 }
 
-const search = query => {
-    return httpClient.get(`/search?query=${query}`);
-}
-
 const update = (id, data) => {
     return httpClient.put(`/edit/${id}`, data);
 }
@@ -23,4 +19,9 @@ const update = (id, data) => {
 const remove = id => {
     return httpClient.delete(`/delete/${id}`);
 }
+
+const search = query => {
+    return httpClient.get(`/search?query=${query}`);
+}
+
 export default { getAll, add, get, update, remove, search };
