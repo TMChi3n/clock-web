@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import ProductService from '../Service/ProductService';
+import { useParams } from 'react-router-dom';
+import ProductService from "../Service/ClockService";
 import { useNavigate } from 'react-router-dom';
 import '../css/detailClock.css';
 

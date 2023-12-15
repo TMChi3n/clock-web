@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductService from '../Service/ProductService';
+import ProductService from "../Service/ClockService";
 import { useNavigate } from 'react-router-dom';
 import '../css/ListClock.css';
 
@@ -48,7 +48,7 @@ const ProductList = () => {
   return (
     <div>
       <div class="topnav">
-      <h2 class="title">Shop bán đồng hồ</h2>
+        <h2 class="title">Shop bán đồng hồ</h2>
         <input
           type="text"
           value={query}
@@ -58,6 +58,8 @@ const ProductList = () => {
         <button class='btn-search' onClick={handleSearch}>Search</button>
         <button class='btn-reset' onClick={handleReset}>Reset</button>
       </div>
+
+      
 
     <div className='item-list'>
       {displayProducts.map(product => (
@@ -70,9 +72,9 @@ const ProductList = () => {
             />
           </div>
           <div class="product-details">
-            <p class="product-name">{product.nameclock}</p>
-            <p class="product-trademark">{product.trademark}</p>
-            <p class="product-price">{product.price}</p>
+            <p class="product-name" onClick={() => DetailClick(product.id)}>{product.nameclock}</p>
+            <p class="product-trademark" onClick={() => DetailClick(product.id)}>{product.trademark}</p>
+            <p class="product-price">{product.price} VND</p>
             
           </div>
         </div>

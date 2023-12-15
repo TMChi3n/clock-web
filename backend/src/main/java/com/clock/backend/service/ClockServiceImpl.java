@@ -63,7 +63,7 @@ public class ClockServiceImpl implements ClockService{
     }
 
     @Override
-    public List<Clock> searchProducts(String query) {
+    public List<Clock> searchClock(String query) {
         return clockRepository.findByQuery(query, query);
     }   
 }

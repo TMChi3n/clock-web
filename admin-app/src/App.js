@@ -1,20 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import DetailClock from './Components/DetailClock';
 import ListClock from './Components/ListClock';
 import AddClock from './Components/AddClock';
 import EditClock from './Components/EditClock';
-
+import Login from './Components/Login';
+import Register from './Components/Register';
 
 function App() {
   return (
     <Router>
       <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            {/* Add other navigation links if needed */}
+          </ul>
+        </nav>
         <Routes>
-          <Route exact path="/" Component={ListClock} />
-          <Route exact path="/add" Component={AddClock} />
-          <Route exact path="/get/:id" Component={DetailClock} />
-          <Route exact path="/edit/:id" Component={EditClock} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/" element={<ListClock />} />
+          <Route path="/add" element={<AddClock />} />
+          <Route path="/edit/:id" element={<EditClock />} />
+          <Route path="/get/:id" element={<DetailClock />} />
         </Routes>
       </div>
     </Router>
@@ -22,3 +33,4 @@ function App() {
 }
 
 export default App;
+

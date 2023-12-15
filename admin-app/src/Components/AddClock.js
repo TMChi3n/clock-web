@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import ProductService from "../Service/ProductService";
+import ProductService from "../Service/ClockService";
 import '../css/AddClock.css';
 
 const AddClock = () => {

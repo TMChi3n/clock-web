@@ -15,6 +15,6 @@ public interface ClockService {
     Clock addClock(Clock clock);
     Clock editClock(Clock clock, int id);
     void deleteClock(int id);
-    List<Clock> searchProducts(String query);
+    List<Clock> searchClock(String query);
 
 }
