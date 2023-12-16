@@ -16,7 +16,7 @@ const LoginAccount = () => {
       if (response.data === 'Login successful') {
         setMessage('Login successful');
         // Redirect to ListProduct after successful login
-        navigate('/'); // Assuming ListProduct is the root route
+        navigate('/list'); // Assuming ListProduct is the root route
       } else {
         setMessage('Invalid credentials');
       }

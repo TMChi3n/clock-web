@@ -17,7 +17,7 @@ import com.clock.backend.service.UserService;
 
 @RestController
 @RequestMapping("/account")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3006"})
 public class LoginAndRegisterController {
     
     @Autowired

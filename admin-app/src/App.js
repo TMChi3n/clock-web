@@ -5,7 +5,6 @@ import ListClock from './Components/ListClock';
 import AddClock from './Components/AddClock';
 import EditClock from './Components/EditClock';
 import Login from './Components/Login';
-import Register from './Components/Register';
 
 function App() {
   return (
@@ -21,8 +20,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/" element={<ListClock />} />
+          <Route path="/list" element={<ListClock />} />
           <Route path="/add" element={<AddClock />} />
           <Route path="/edit/:id" element={<EditClock />} />
           <Route path="/get/:id" element={<DetailClock />} />

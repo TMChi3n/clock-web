@@ -33,7 +33,7 @@ const EditProduct = () => {
             ProductService.update(id, product)
                 .then(response => {
                     console.log('Clock data updated successfully', (response.id, response.product));
-                    navigate('/');
+                    navigate('/list');
                 })
                 .catch(error => {
                     console.log('Something went wrong', error);
@@ -97,7 +97,7 @@ const EditProduct = () => {
       };
 
     const backHome = () => {
-        navigate('/')
+        navigate('/list')
     }
 
     return(

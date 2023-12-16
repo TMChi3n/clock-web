@@ -29,7 +29,7 @@ const AddClock = () => {
       ProductService.add(product) 
         .then(response => {
           console.log(response.data);
-          navigate('/')
+          navigate('/list')
         })
         .catch(error => {
           console.log('Error: ', error)
@@ -74,7 +74,7 @@ const AddClock = () => {
   };
 
   const backHome = () => {
-    navigate('/')
+    navigate('/list')
   }
   
 

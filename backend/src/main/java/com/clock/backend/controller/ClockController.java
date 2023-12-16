@@ -22,7 +22,8 @@ import com.clock.backend.service.ClockService;
 
 @RestController
 @RequestMapping("/products")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3006"})
+
 public class ClockController {
     
     @Autowired

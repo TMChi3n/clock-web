@@ -1,0 +1,65 @@
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Phóng to hình ảnh khi rê chuột vào */
+  }
+  
+  .info-container {
+    margin-left: 20px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
+  }
+  
+  .product-actions {
+    margin-top: 20px;
+  }
+  
+  /* Các CSS styles khác như cho button, link, h2 có thể được thêm vào */
+  
+  .title {
+    margin: center;
+  }
+
+  .product-details {
+    /* Các styles hiện tại của product-details */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-info-container {
+    display: flex;
+  }
+  
+  .image-container {
+    /* Các styles hiện tại của image-container */
+    margin-right: 20px; /* Khoảng cách giữa hình ảnh và mô tả */
+  }
+  
+  .info-container {
+    /* Các styles hiện tại của info-container */
+    flex: 1; /* Mở rộng mô tả để lấp đầy không gian còn lại */
+  }
+  
+  
+  
+  

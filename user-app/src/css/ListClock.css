@@ -1,0 +1,110 @@
+.topnav {
+  /* Existing styles */
+  overflow: hidden; /* Ensure elements stay in the same line */
+  justify-content: center; /* Đặt khung tìm kiếm vào giữa trang */
+  display: flex;
+  align-items: center; /* Căn tiêu đề và thanh tìm kiếm theo chiều dọc */
+  margin-top: 20px; /* Khoảng cách từ trên xuống */
+}
+
+.topnav input[type=text] {
+  /* Existing styles */
+  float: left; /* Allow the input to float to the left */
+  margin: 8px; /* Adjust margin as needed */
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+}
+
+.btn-search {
+  /* Existing styles */
+  float: left; /* Allow the button to float to the left */
+  margin: 8px; /* Adjust margin as needed */
+  padding: 6px 10px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer; /* Add a cursor pointer */
+  font-size: 17px;
+}
+
+.btn-reset {
+  /* Existing styles */
+  float: left; /* Allow the button to float to the left */
+  margin: 8px; /* Adjust margin as needed */
+  padding: 6px 10px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer; /* Add a cursor pointer */
+  font-size: 17px;
+}
+
+h2 {
+  text-align: center; /* Centers the h2 element */
+}
+
+.item-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các sản phẩm xuất hiện trên nhiều hàng */
+  gap: 160px; /* Khoảng cách giữa các sản phẩm */
+  justify-content: space-evenly; /* Để các sản phẩm tự động căn giữa */
+}
+
+.product-item {
+  display: flex;
+  width: fit-content; /* Độ rộng lớn hơn của mỗi khung sản phẩm */
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi sản phẩm */
+}  
+
+.product-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển đổi mượt mà */
+}
+
+.product-image:hover .product-img {
+  transform: scale(1.2); /* Phóng to hình ảnh khi rê chuột vào */
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-name,
+.product-trademark,
+.product-price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.title {
+  margin-right: 50px;
+}
+
+.product-price, .product-name{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+  
