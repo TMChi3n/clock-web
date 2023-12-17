@@ -32,7 +32,7 @@ const EditProduct = () => {
         if (isEditing) {
             ProductService.update(id, product)
                 .then(response => {
-                    console.log('Clock data updated successfully', (response.id, response.product));
+                    alert('Cập nhật dữ liệu thành công', (response.id, response.product));
                     navigate('/list');
                 })
                 .catch(error => {
@@ -255,5 +255,4 @@ const EditProduct = () => {
 }
 
 export default EditProduct;
-
 

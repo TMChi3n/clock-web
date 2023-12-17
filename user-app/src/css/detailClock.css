@@ -1,65 +1,43 @@
 .product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
   
-  .product-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image-container {
-    max-width: 300px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.2); /* Phóng to hình ảnh khi rê chuột vào */
-  }
-  
-  .info-container {
-    margin-left: 20px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
-  }
-  
-  .product-actions {
-    margin-top: 20px;
-  }
-  
-  /* Các CSS styles khác như cho button, link, h2 có thể được thêm vào */
-  
-  .title {
-    margin: center;
-  }
+}
 
-  .product-details {
-    /* Các styles hiện tại của product-details */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .image-info-container {
-    display: flex;
-  }
-  
-  .image-container {
-    /* Các styles hiện tại của image-container */
-    margin-right: 20px; /* Khoảng cách giữa hình ảnh và mô tả */
-  }
-  
-  .info-container {
-    /* Các styles hiện tại của info-container */
-    flex: 1; /* Mở rộng mô tả để lấp đầy không gian còn lại */
-  }
-  
-  
-  
-  
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px; /* Độ rộng tối đa của sản phẩm */
+}
+
+.image-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-right: 20px; /* Khoảng cách giữa ảnh và thông tin */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-container {
+  flex: 1;
+}
+
+.title {
+  text-align: center; /* Căn giữa theo chiều ngang */
+  margin-top: 200px; /* Khoảng cách phía dưới */
+}
+

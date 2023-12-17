@@ -28,11 +28,11 @@ const AddClock = () => {
 
       ProductService.add(product) 
         .then(response => {
-          console.log(response.data);
+          alert("Thêm sản phẩm thành công", response.data);
           navigate('/list')
         })
         .catch(error => {
-          console.log('Error: ', error)
+          console.log('Lỗi: ', error)
         })
 
     }

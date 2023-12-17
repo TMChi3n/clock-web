@@ -1,11 +1,16 @@
 .topnav {
-  /* Existing styles */
-  overflow: hidden; /* Ensure elements stay in the same line */
-  justify-content: center; /* Đặt khung tìm kiếm vào giữa trang */
   display: flex;
-  align-items: center; /* Căn tiêu đề và thanh tìm kiếm theo chiều dọc */
-  margin-top: 20px; /* Khoảng cách từ trên xuống */
+  justify-content: center;
+  align-items: center; /* Align items on the vertical axis */
+  border: 1px solid #B2A59B;
 }
+
+.topnav .title {
+  margin-right: 10px; /* Adjust the spacing between the title and input */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 
 .topnav input[type=text] {
   /* Existing styles */
@@ -14,6 +19,7 @@
   padding: 6px;
   border: none;
   font-size: 17px;
+  margin-right: 10px;
 }
 
 .btn-search {
@@ -26,19 +32,15 @@
   font-size: 17px;
 }
 
-.btn-reset {
-  /* Existing styles */
-  float: left; /* Allow the button to float to the left */
-  margin: 8px; /* Adjust margin as needed */
-  padding: 6px 10px; /* Adjust padding as needed */
+.btn-login {
+  margin-left: auto; /* Đẩy nút về bên phải bằng cách sử dụng margin-left: auto */
+  margin-right: 100px; /* Để giữ khoảng cách từ phải nút với các phần tử khác */
+  padding: 6px 10px; /* Có thể điều chỉnh padding theo ý muốn */
   border: none;
-  cursor: pointer; /* Add a cursor pointer */
+  cursor: pointer;
   font-size: 17px;
 }
 
-h2 {
-  text-align: center; /* Centers the h2 element */
-}
 
 .item-list {
   margin-top: 50px;
@@ -90,13 +92,12 @@ h2 {
   margin: 5px 0;
 }
 
-.title {
-  margin-right: 50px;
-}
-
 .product-price, .product-name{
   font-weight: bold;
 }
+
+
+
 
 
 

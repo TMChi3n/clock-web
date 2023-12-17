@@ -29,6 +29,12 @@ public class LoginAndRegisterController {
             @RequestParam("username") String username,
             @RequestParam("password") String password
     ) {
+        // Check if the email already exists
+        Optional<User> existingUser = userService.login(email);
+        if (existingUser.isPresent()) {
+            return ResponseEntity.badRequest().body("Email already exists. Please use a different email.");
+        }
+
         // Create a new user entity
         User newUser = new User();
         newUser.setEmail(email);
@@ -40,6 +46,7 @@ public class LoginAndRegisterController {
 
         return ResponseEntity.ok("User registered successfully");
     }
+
 
 
     @GetMapping("/login")

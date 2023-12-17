@@ -1,65 +1,115 @@
-.product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .product-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image-container {
-    max-width: 300px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.2); /* Phóng to hình ảnh khi rê chuột vào */
-  }
-  
-  .info-container {
-    margin-left: 20px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
-  }
-  
-  .product-actions {
-    margin-top: 20px;
-  }
-  
-  /* Các CSS styles khác như cho button, link, h2 có thể được thêm vào */
-  
-  .title {
-    margin: center;
-  }
+.topnav-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .product-details {
-    /* Các styles hiện tại của product-details */
-    display: flex;
-    flex-direction: column;
-  }
+.topnav-detail {
+  background-color: white;
+  width: 800px; /* Đặt chiều rộng của form */
+  height: 600px; /* Đặt chiều cao của form */
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px; /* Độ rộng tối đa của sản phẩm */
+}
+
+.image-container {
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container:hover img {
+  transform: scale(1.2); /* Phóng to hình ảnh khi rê chuột vào */
+}
+
+.info-container {
+  margin-left: 20px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
+}
+
+.product-actions {
+  margin-top: 20px;
+}
+
+/* Các CSS styles khác như cho button, link, h2 có thể được thêm vào */
+
+.title {
+  margin: center;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+.image-info-container {
+  display: flex;
+}
+
+.image-container {
+  /* Các styles hiện tại của image-container */
+  margin-right: 20px; /* Khoảng cách giữa hình ảnh và mô tả */
+}
+
+.info-container {
+  /* Các styles hiện tại của info-container */
+  flex: 1; /* Mở rộng mô tả để lấp đầy không gian còn lại */
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Chiều cao tối thiểu là 100% chiều cao của viewport */
+}
+
+.product-actions button {
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-wrap: wrap;
+  justify-content: auto; /* Căn các nút về bên phải */
+  padding: 10px 24px;
+  font-size: 15px;
+  margin-left: 15px; /* Tạo khoảng cách giữa các nút bằng margin-left */
+}
+
+
+.product-actions button {
+  margin-right: 15px; /* Tạo khoảng cách giữa các nút */
+}
+
+.product-actions {
+  margin-right: 15px; /* Khoảng cách từ phần tử cha */
+}
+
+.btn-info {
+  border-radius: 20px;
   
-  .image-info-container {
-    display: flex;
-  }
-  
-  .image-container {
-    /* Các styles hiện tại của image-container */
-    margin-right: 20px; /* Khoảng cách giữa hình ảnh và mô tả */
-  }
-  
-  .info-container {
-    /* Các styles hiện tại của info-container */
-    flex: 1; /* Mở rộng mô tả để lấp đầy không gian còn lại */
-  }
-  
-  
-  
-  
+}
+
+.btn-danger {
+  border-radius: 20px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao 100% của viewport */
+  }
+
+  .register-frame {
+    border: 1px solid black;
+    padding: 100px; /* Tăng padding để làm to khung */
+    max-width: 400px; /* Độ rộng tối đa của khung */
+    border-radius: 20px;
+    background: linear-gradient(to right, #aedcff 30%, white 50%);
+    background: linear-gradient(to left, #aedcff 10%, #FF6C22 130%);
+  }
+
+  .nav .register-container button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px 150px;
+    padding: 6px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+  }
+  
+  .nav .register-container button:hover {
+    background-color: #A7D397; /* Thay đổi màu nền khi hover */
+    color: white; /* Đổi màu chữ để phù hợp với nền */
+  }
+  
+
+  .nav .register-container input[type=text],
+  .nav .register-container input[type=password] {
+    display: block;
+    width: calc(100% );
+    margin: 10px 15px;
+    padding: 12px 20px;
+    border: 1px solid black; /* Xóa border */
+    border-radius: 20px; /* Đặt góc cong */
+    box-sizing: border-box;
+  }
+
+  h2{
+    width: 300px;
+
+  }
+

@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import ClockService from '../Service/ClockService';
+import ProductService from '../Service/ClockService';
 import '../css/detailClock.css'
 
 const DetailClock = () => {
@@ -9,7 +9,7 @@ const DetailClock = () => {
     const navigate = useNavigate(); // Use useNavigate for React Router v6
   
     useEffect(() => {
-        ClockService.get(id)
+      ProductService.get(id)
         .then(response => {
           console.log(response.data);
           setProduct(response.data);
@@ -24,8 +24,9 @@ const DetailClock = () => {
     }
   
     const backHome =() => {
-      navigate('/list')
+      navigate('/')
     }
+
   
     return (
       

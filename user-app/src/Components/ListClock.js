@@ -34,19 +34,18 @@ const ProductList = () => {
             })
     }
 
-    const handleReset = () => {
-        setQuery('');
-        setSearchResults([]);
-    }
-
-    const DetailClick = (id) => {
+    const DetailClock = (id) => {
         navigate(`/get/${id}`)
-      };
+    };
+    
+    const LoginPath = () => {
+        navigate('/login')
+    };
 
     const displayProducts = searchResults.length > 0 ? searchResults : products;
 
     return (
-        <div>
+        <div class='list-product'>
             <div class='topnav'>
                 <h2 class='title'>Shop bán đồng hồ</h2>
                 <input 
@@ -56,13 +55,13 @@ const ProductList = () => {
                     placeholder='Tìm kiếm...'
                 />
                 <button class='btn-search' onClick={handleSearch}>Tìm kiếm</button>
-                <button class='btn-reset' onClick={handleReset}>Reset</button>
+                <button class='btn-login' onClick={LoginPath}>Đăng nhập</button>
             </div>
 
             <div className='item-list'>
                 {displayProducts.map(product => (
                     <div className='product-item' key={product.id}>
-                        <div className='product-image' onClick={() => DetailClick(product.id)}>
+                        <div className='product-image' onClick={() => DetailClock(product.id)}>
                             <img 
                                 src={product.image}
                                 alt={product.nameclock}
@@ -71,7 +70,7 @@ const ProductList = () => {
                         </div>
 
                         <div className='product-details'>
-                            <p class="product-name" onClick={() => DetailClick(product.id)}>{product.nameclock}</p>
+                            <p class="product-name" onClick={() => DetailClock(product.id)}>{product.nameclock}</p>
                             <p class="product-trademark" >{product.trademark}</p>
                             <p class="product-price">{product.price} VND</p> 
                         </div>

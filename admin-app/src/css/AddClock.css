@@ -7,7 +7,8 @@
   }
   
   .form-container {
-    width: 25%; /* Đặt chiều rộng cho form */
+    max-width: 600px; /* Đặt chiều rộng tối đa của form */
+    margin: auto; /* Để căn giữa form trên trang */
   }
 
   .btn-create {
@@ -15,5 +16,24 @@
     height: 30px; /* Đặt chiều cao lớn hơn */
     font-size: 18px; /* Tăng kích thước font chữ */
     font-weight: bold;
+    border-radius: 20px;
+    margin-left: 10px;
   }
+
+  .title {
+    text-align: center;
+  }
+
+  .form-control {
+    padding: 10px;
+    font-size: 15px; /* Tăng kích thước chữ */
+    width: 300px;
+    margin-left: -150px;
+  }
+
+  
+
+  
+  
+  
   

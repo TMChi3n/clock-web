@@ -1,0 +1,51 @@
+  
+  .nav {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao 100% của viewport */
+  }
+  
+  .login-frame {
+    border: 1px solid black;
+    padding: 30px; /* Tăng padding để làm to khung */
+    max-width: 400px; /* Độ rộng tối đa của khung */
+    border-radius: 20px;
+    background: linear-gradient(to right, #aedcff 30%, white 50%);
+    background: linear-gradient(to left, #aedcff 10%, #FF6C22 130%);
+  }
+  
+  .nav .login-container input[type=text],
+  .nav .login-container input[type=password]
+  {
+    display: block;
+    width: calc(100% - 60px);
+    margin: 8px 30px;
+    padding: 12px 20px;
+    border: 1px solid black; /* Xóa border */
+    border-radius: 20px; /* Đặt góc cong */
+    box-sizing: border-box;
+  }
+  
+  .nav .login-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    color: black;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 120px;
+    margin: 20px 150px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav .login-container button:hover {
+    background-color: #A7D397;
+    color: white;
+  }
+
+  h2 {
+    margin: 20px 60px;
+  }
+  
