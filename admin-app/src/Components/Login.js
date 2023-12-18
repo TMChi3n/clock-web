@@ -32,7 +32,7 @@ const LoginAccount = () => {
   return (
     <div className='nav'>
         <div class='login-frame'>
-          <h2>Login</h2>
+          <h2>Đăng nhập</h2>
           <div class='login-container'>
             <form onSubmit={handleLogin}>
               <input type="text" name="email" placeholder="Email" required />

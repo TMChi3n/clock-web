@@ -17,11 +17,13 @@
     font-size: 18px; /* Tăng kích thước font chữ */
     font-weight: bold;
     border-radius: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 60px;
+
   }
 
   .title {
-    text-align: center;
+    margin: 0px 80px;
   }
 
   .form-control {

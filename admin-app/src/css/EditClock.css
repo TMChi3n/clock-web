@@ -3,6 +3,9 @@
     height: 30px; /* Đặt chiều cao lớn hơn */
     font-size: 18px; /* Tăng kích thước font chữ */
     font-weight: bold;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 100px;
   }
 
   .container {
@@ -15,3 +18,20 @@
   .form-container {
     width: 25%; /* Đặt chiều rộng cho form */
   }
+
+.form-container {
+  max-width: 600px; /* Đặt chiều rộng tối đa của form */
+  margin: auto; /* Để căn giữa form trên trang */
+}
+
+.title {
+  margin: 0px 80px;
+}
+
+
+
+
+
+
+
+

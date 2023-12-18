@@ -47,7 +47,7 @@ const RegisterAccount = () => {
                   <div class='register-container'>
                       <form onSubmit={handleRegister}>
                           <input type="text" name="email" placeholder="Email" required />
-                          <input type="text" name="username" placeholder="username" required />
+                          <input type="text" name="username" placeholder="User name" required />
                           <input type="password" name="password" placeholder="Password" required />
                           <button type="submit">Đăng ký</button>
                           
