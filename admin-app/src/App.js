@@ -5,6 +5,7 @@ import ListClock from './Components/ListClock';
 import AddClock from './Components/AddClock';
 import EditClock from './Components/EditClock';
 import Account from './Components/Login';
+import Register from './Components/Register';
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/list" element={<ListClock />} />
           <Route path="/add" element={<AddClock />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/edit/:id" element={<EditClock />} />
           <Route path="/get/:id" element={<DetailClock />} />
         </Routes>

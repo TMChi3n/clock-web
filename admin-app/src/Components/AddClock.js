@@ -33,33 +33,38 @@ const AddClock = () => {
         })
         .catch(error => {
           console.log('Lỗi: ', error)
+          alert('Vui lòng kiểm tra lại dữ liệu nhập vào');
         })
 
     }
 
+    const init = () => {
+        if (id) {
+            ProductService.get(id)
+                .then(product => {
+                    setNameClock(product.data.nameclock);
+                    setTrademark(product.data.trademark);
+                    setSize(product.data.size);
+                    setPrice(product.data.price);
+                    setWireMaterial(product.data.wireMaterial);
+                    setGlassMaterial(product.data.glassMaterial);
+                    setStyle(product.data.style);
+                    setFunctions(product.data.functions);
+                    setFaceColor(product.data.faceColor);
+                    setOrigin(product.data.origin);
+                    setShape(product.data.shape);
+                    setImage(product.data.image);
+                })
+                .catch(error => {
+                    console.log('Something went wrong', error);
+                })
+        }
+      }
+
 
     useEffect(() => {
-      if (id) {
-          ProductService.get(id)
-              .then(product => {
-                  setNameClock(product.data.nameclock);
-                  setTrademark(product.data.trademark);
-                  setSize(product.data.size);
-                  setPrice(product.data.price);
-                  setWireMaterial(product.data.wireMaterial);
-                  setGlassMaterial(product.data.glassMaterial);
-                  setStyle(product.data.style);
-                  setFunctions(product.data.functions);
-                  setFaceColor(product.data.faceColor);
-                  setOrigin(product.data.origin);
-                  setShape(product.data.shape);
-                  setImage(product.data.image);
-              })
-              .catch(error => {
-                  console.log('Something went wrong', error);
-              })
-      }
-  }, [])
+      init();
+  }, [id])
 
   const handleImage = (e) => {
     const file = e.target.files[0]; // Use 'files' instead of 'file'

@@ -38,6 +38,7 @@ const LoginAccount = () => {
               <input type="text" name="email" placeholder="Email" required />
               <input type="password" name="password" placeholder="Password" required />
               <button type="submit">Đăng nhập</button>
+              <p>Bạn không có tài khoản? Hãy <Link to='/register'>đăng ký</Link> để đăng nhập</p>
             </form>
           </div>
         </div>

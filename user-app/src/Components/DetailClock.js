@@ -7,8 +7,8 @@ const DetailClock = () => {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
     const navigate = useNavigate(); // Use useNavigate for React Router v6
-  
-    useEffect(() => {
+
+    const init = () => {
       ProductService.get(id)
         .then(response => {
           console.log(response.data);
@@ -17,6 +17,10 @@ const DetailClock = () => {
         .catch(error => {
           console.log('Error: ', error);
         })
+    }
+  
+    useEffect(() => {
+      init();
     }, [id]);
   
     if (!product) {

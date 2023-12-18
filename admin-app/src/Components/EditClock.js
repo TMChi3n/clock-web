@@ -37,11 +37,12 @@ const EditProduct = () => {
                 })
                 .catch(error => {
                     console.log('Something went wrong', error);
+                    alert('Vui lòng kiểm tra lại dữ liệu vửa sửa')
                 });
         }
     }
 
-    useEffect(() => {
+    const init = () => {
         if (isEditing) {
             ProductService.get(id)
                 .then(product => {
@@ -79,6 +80,10 @@ const EditProduct = () => {
                     console.log('Something went wrong', error);
                 });
         }
+      }
+
+    useEffect(() => {
+        init();
     }, [id, isEditing]);
 
     const handleImageChange = (e) => {

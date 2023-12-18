@@ -9,8 +9,6 @@ const ProductList = () => {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
-  
-
   const init = () => {
     ProductService.getAll()
       .then(response => {
